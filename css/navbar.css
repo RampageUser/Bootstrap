@@ -1,0 +1,27 @@
+.my_bar {
+    background-color:rgb(253, 246, 246);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.my_bar a {
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-menu {
+    background-color:rgb(253, 246, 246);
+}
+
+.btn-outline-secondary {
+    color: rgb(0, 0, 0);
+}
+
+.btn-outline-secondary:hover {
+    background-color: black;
+}
+
+.my_search {
+    width: 17rem;
+}
