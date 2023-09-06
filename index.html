@@ -71,10 +71,10 @@
       </div>
     </nav>
 
-    <main class="main_conteiner">
+    <main class="main_container">
 
       <!-- title -->
-      <div class="conteiner mb-3">
+      <div class="container mb-3">
         <div class="row">
           <div class="col-12 text-center">
             <h3>Почему мы</h3>
@@ -83,91 +83,44 @@
       </div>
 
       <!-- carousel -->
-      <div class="conteiner mb-3">
-        <div class="row justify-content-center">
-          <div class="col-9 border">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
+      <div class="container-fluid p-0">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active ratio ratio-21x9">
+              <img src="./img/Орех_1.jpg" class="d-block w-100 object-fit-cover" alt="Promo">
+              <div class="carousel-caption">
+                <h5>Метка первого слайда</h5>
+                <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="conteiner">
-                    <div class="row ">
-                      <div class="col-lg-8 d-flex align-items-center justify-content-center">
-                        <div class="ratio ratio-16x9 my-2">
-                          <img src="./img/Орех_1.jpg" class="d-block w-100" alt="Promo">
-                        </div>
-                      </div>
-                      <div class="col-lg-4 text-center d-flex align-items-center justify-content-center">
-                        <div class="py-3 py-lg-0">
-                          <h5>Широчайший ассортимент:</h5>
-                          <p class="fst-italic">
-                            - Более 500 разновидностей орехов, сухофруктов, и семечек, чтобы удовлетворить любой вкус и
-                            предпочтение.<br>- У нас есть орехи и сухофрукты для разных диетических потребностей, включая веганскую, безглютеновую и низкоуглеводную диеты
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="conteiner">
-                    <div class="row">
-                      <div class="col-lg-8 d-flex align-items-center justify-content-center">
-                        <div class="ratio ratio-16x9 my-2">
-                          <img src="./img/3.jpg" class="d-block w-100" alt="Promo">
-                        </div>
-                      </div>
-                      <div class="col-lg-4 text-center d-flex align-items-center justify-content-center">
-                        <div class="py-3 py-lg-0">
-                          <h5>Широчайший ассортимент:</h5>
-                          <p class="fst-italic">
-                            - Более 500 разновидностей орехов, сухофруктов, и семечек, чтобы удовлетворить любой вкус и
-                            предпочтение.<br>- У нас есть орехи и сухофрукты для разных диетических потребностей, включая веганскую, безглютеновую и низкоуглеводную диеты
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="conteiner">
-                    <div class="row ">
-                      <div class="col-lg-8 d-flex align-items-center justify-content-center">
-                        <div class="ratio ratio-16x9 my-2">
-                          <img src="./img/dhl.jpg" class="d-block w-100" alt="Promo">
-                        </div>
-                      </div>
-                      <div class="col-lg-4 text-center d-flex align-items-center justify-content-center">
-                        <div class="py-3 py-lg-0">
-                          <h5>Доставки в обход санкций:</h5>
-                          <p class="fst-italic">
-                            - Мы имеем долгосрочные партнерские отношения с поставщиками, что позволяет нам
-                            импортировать продукты из разных регионов.<br>- Наши клиенты могут наслаждаться разнообразием мировых вкусов без ограничений. Мы
-                            предлагаем орехи из экзотических стран.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <div class="carousel-item ratio ratio-21x9">
+              <img src="./img/3.jpg" class="d-block w-100 object-fit-cover" alt="...">
+              <div class="carousel-caption">
+                <h5>Метка первого слайда</h5>
+                <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+            </div>
+            <div class="carousel-item ratio ratio-21x9">
+              <img src="./img/dhl.jpg" class="d-block w-100 object-fit-cover" alt="...">
+              <div class="carousel-caption">
+                <h5>Метка первого слайда</h5>
+                <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+              </div>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
         </div>
       </div>
 
@@ -189,7 +142,7 @@
                   <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
                     Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.
                   </p>
-                  <div class="conteiner text-center">
+                  <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <a class="btn btn-dark mt-2">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
@@ -217,7 +170,7 @@
                   <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
                     Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.
                   </p>
-                  <div class="conteiner text-center">
+                  <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <a class="btn btn-dark mt-2">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
@@ -245,7 +198,7 @@
                   <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
                     Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.
                   </p>
-                  <div class="conteiner text-center">
+                  <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <a class="btn btn-dark mt-2">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
@@ -273,7 +226,7 @@
                   <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
                     Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.
                   </p>
-                  <div class="conteiner text-center">
+                  <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <a class="btn btn-dark mt-2">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
@@ -301,7 +254,7 @@
                   <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
                     Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.
                   </p>
-                  <div class="conteiner text-center">
+                  <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <a class="btn btn-dark mt-2">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
@@ -382,9 +335,7 @@
     </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>

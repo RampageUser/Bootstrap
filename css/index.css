@@ -1,3 +1,7 @@
+.carousel-inner .carousel-item {
+    max-height: 450px;
+}
+
 .my_card {
     transition: .3s;
 }
