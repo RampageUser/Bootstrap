@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +33,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Главная</a>
+                <a class="nav-link" aria-current="page" href="./index.html">Главная</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#my_footer">Контакты</a>
@@ -89,11 +90,14 @@
       </nav>
       <!-- Main navbar -->
       <!-- Breadcrumb -->
-      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="d-inline-block pe-3 pb-2 my_bar2 d-none"
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="d-inline-block pe-3 pb-2 my_bar2"
         data-bs-theme="dark">
         <ol class="breadcrumb m-0">
-          <li class="breadcrumb-item"><a href="./index.html"
-              class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Главная</a>
+          <li class="breadcrumb-item active" aria-current="page">
+            Категории
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="./index.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Подкатегория</a>
           </li>
         </ol>
         <div class="triangle"></div>
@@ -164,65 +168,11 @@
       <div class="container mb-3">
         <div class="row">
           <div class="col-12 text-center">
-            <h3>Почему мы</h3>
+            <h3>Выбирай лучшее</h3>
           </div>
         </div>
       </div>
       <!-- title -->
-      <!-- carousel -->
-      <div class="container-fluid p-0 mb-4">
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel"
-          data-bs-interval="4000">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active ratio ratio-21x9">
-              <img src="./img/Орех_1.jpg" class="d-block w-100 object-fit-cover" alt="Promo">
-              <div class="carousel-caption d-flex align-items-end justify-content-center">
-                <div class="mb-3 my_carousel">
-                  <h5 class="fw-bold">Откройте свой вкусовой путь с нашими свежими орехами!</h5>
-                  <p class="fw-bold fst-italic">"В нашем магазине мы предлагаем вам уникальное приключение в мире вкусов и питательности. Мы гордимся тем, что предлагаем только свежие и качественные орехи, которые удовлетворят самые изысканные вкусы."</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item ratio ratio-21x9">
-              <img src="./img/3.jpg" class="d-block w-100 object-fit-cover" alt="...">
-              <div class="carousel-caption d-flex align-items-end justify-content-center">
-                <div class="mb-3 my_carousel">
-                  <h5 class="fw-bold">Здоровье и Экология в Каждой Упаковке!</h5>
-                  <p class="fw-bold fst-italic">Мы гордимся тем, что наши орехи собираются в экологически чистых зонах, далеко от загрязнений и химических удобрений. Мы поддерживаем устойчивое сельское хозяйство и заботимся о сохранении природы.</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item ratio ratio-21x9">
-              <img src="./img/dhl.jpg" class="d-block w-100 object-fit-cover" alt="...">
-              <div class="carousel-caption d-flex align-items-end justify-content-center">
-                <div class="mb-3 my_carousel">
-                  <h5 class="fw-bold">Орехи со Всего Мира, Доступные Даже в Условиях Санкций!</h5>
-                  <p class="fw-bold fst-italic">Несмотря на санкции, наша компания предоставляет безопасную и надежную доставку орехов прямо к вам. Мы следим за всеми правилами и регуляциями, чтобы ваши покупки достигли вас в целости и сохранности.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Предыдущий</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Следующий</span>
-          </button>
-        </div>
-      </div>
-      <!-- carousel -->
       <!-- input form -->
       <div class="container">
         <div class="row">
@@ -240,10 +190,10 @@
             <div class="input-group mb-3 input-group-sm w-75 m-auto">
               <label class="input-group-text" for="inputGroupSelect01">Показать:</label>
               <select class="form-select text-center" id="inputGroupSelect01">
-                <option selected>9</option>
-                <option value="1">15</option>
-                <option value="2">30</option>
-                <option value="2">60</option>
+                <option selected>9 карточек</option>
+                <option value="1">15 карточек</option>
+                <option value="2">30 карточек</option>
+                <option value="2">60 карточек</option>
               </select>
             </div>
           </div>

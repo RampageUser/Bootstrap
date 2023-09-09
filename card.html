@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,7 +16,6 @@
   <link rel="stylesheet" href="./css/card.css" />
   <link rel="stylesheet" href="./css/footer.css" />
 </head>
-
 <body class="bs-body-bg-rgb">
   <div class="wrapper">
     <header>
@@ -45,7 +43,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#">Действие</a>
+                    <a class="dropdown-item" href="./catalog.html">Подкатегория</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider">
@@ -93,10 +91,12 @@
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="d-inline-block pe-3 pb-2 my_bar2"
         data-bs-theme="dark">
         <ol class="breadcrumb m-0">
-          <li class="breadcrumb-item"><a href="./index.html"
-              class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Главная</a>
+          <li class="breadcrumb-item">
+            <a href="./index.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Главная</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Карточка товара</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Карточка товара
+          </li>
         </ol>
         <div class="triangle"></div>
       </nav>
@@ -217,8 +217,7 @@
                 Екатеринбург ул. Пушкина д.1
               </p>
               <p>
-                <a href="tel:+73439994949"
-                  class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">+73439994949</a>
+                <a href="tel:+73439994949" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">+73439994949</a>
               </p>
               <p>
                 пн-вс с 8:00 до 20:00
@@ -264,5 +263,4 @@
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
   </script>
 </body>
-
 </html>

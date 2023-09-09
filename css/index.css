@@ -2,6 +2,12 @@
     max-height: 450px;
 }
 
+.my_carousel {
+    background: rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+    width: 100%;
+}
+
 .my_card {
     transition: .3s;
 }
