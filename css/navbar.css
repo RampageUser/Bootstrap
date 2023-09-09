@@ -1,27 +1,74 @@
-.my_bar {
-    background-color:rgb(253, 246, 246);
+header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 
-.my_bar a {
-    color: rgb(0, 0, 0);
+.my_bar2 {
+    position: relative;
+    background-color: #2b3035;
 }
 
-.dropdown-menu {
-    background-color:rgb(253, 246, 246);
+.breadcrumb {
+    padding-left: 0.7rem;
 }
 
-.btn-outline-secondary {
-    color: rgb(0, 0, 0);
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 32px;
+    border-top-width: 0px;
+    border-left: 40px solid #2b3035;
+    top: 0;
+    right: -40px;
 }
 
-.btn-outline-secondary:hover {
-    background-color: black;
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 .15rem;
 }
 
-.my_search {
-    width: 17rem;
+.my_icon {
+    color: #c6c6c6;
+    transition: all .2s;
+}
+
+.my_icon {
+    font-size: 1.3rem;
+}
+
+.nav_btn:hover .my_icon, .counter {
+    color: #ffffff;
+}
+
+.nav_btn {
+    position: relative;
+}
+
+.counter {
+    position: absolute;
+    top: 0;
+    font-size: .5rem;
+    color: #000;
+    border: 1px dotted black;
+    color:#c6c6c6;
+    border-color: #c6c6c6;
+}
+
+.modal-header {
+    background-color:#2b3035;
+}
+
+.modal-body img {
+    max-width: 100px;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }

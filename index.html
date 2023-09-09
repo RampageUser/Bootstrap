@@ -5,74 +5,163 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>iStore</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/2e3d04716c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/body.css">
   <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body class="bs-body-bg-rgb">
   <div class="wrapper">
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary z-3">
-      <div class="container-fluid my_bar">
-        <a class="navbar-brand" href="#">iStore</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-current="page" href="#">Главная</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#my_footer">Контакты</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Каталог</a>
-              <ul class="dropdown-menu my-1">
-                <li>
-                  <a class="dropdown-item" href="#">Action</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0 order-lg-2">
-            <li class="nav-item mx-1">
-              <a class="nav-link" aria-current="page" href="#">
-                <i class="fa-solid fa-user" style="color: #000000;"></i><span class="d-lg-none"> Профиль</span>
-              </a>
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link" aria-current="page" href="#">
-                <i class="fa-solid fa-heart" style="color: #000000;"></i><span class="d-lg-none"> Избраное</span>
-              </a>
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link" aria-current="page" href="#">
-                <i class="fa-solid fa-basket-shopping" style="color: #000000;"></i><span class="d-lg-none"> Корзина</span>
-              </a>
-            </li>
-            <li class="nav-item d-none">
-              <a class="nav-link" aria-current="page" href="./login.html">Войти</a>
-            </li>
-            <li class="nav-item d-none">
-              <a class="nav-link" aria-current="page" href="./registration.html">Регистрация</a>
-            </li>
-          </ul>
-          <form class="d-flex order-lg-1 ms-auto" role="search">
-            <input class="form-control me-2 my_search my-1" type="search" placeholder="Введите название" aria-label="Search">
-            <button class="btn btn-outline-secondary my-1 me-2" type="submit">Поиск</button>
-          </form>
+    <header>
+      <!-- Main navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">iStore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#my_footer">Контакты</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle pb-1" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Категории
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Действие</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto order-lg-2">
+              <li class="nav-item mx-1">
+                <a class="nav-link nav_btn" aria-current="page" href="#">
+                  <i class="fa-solid fa-user my_icon"></i><span class="d-lg-none"> Профиль</span>
+                </a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link nav_btn" aria-current="page" href="#">
+                  <i class="fa-solid fa-heart my_icon"></i>
+                  <span class="d-lg-none"> Избраное</span>
+                  <span class="badge rounded-pill counter">0</span>
+                </a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link nav_btn" aria-current="page" href="#" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-basket-shopping my_icon"></i>
+                  <span class="d-lg-none"> Корзина</span>
+                  <span class="badge rounded-pill counter">1</span>
+                </a>
+              </li>
+              <li class="nav-item d-none">
+                <a class="nav-link" aria-current="page" href="./login.html">Войти</a>
+              </li>
+              <li class="nav-item d-none">
+                <a class="nav-link" aria-current="page" href="./registration.html">Регистрация</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Введине название" aria-label="Поиск">
+              <button class="btn btn-dark" type="submit">Поиск</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Main navbar -->
+      <!-- Breadcrumb -->
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="d-inline-block pe-3 pb-2 my_bar2"
+        data-bs-theme="dark">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item"><a href="./index.html"
+              class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Главная</a>
+          </li>
+        </ol>
+        <div class="triangle"></div>
+      </nav>
+      <!-- Breadcrumb -->
+    </header>
+    <!-- Model window -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-secondary" id="exampleModalLabel">Корзина</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <table class="table table-striped table-hover table-bordered text-center">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">№</th>
+                          <th scope="col">Изображение</th>
+                          <th scope="col">Название</th>
+                          <th scope="col">Количество</th>
+                          <th scope="col">Цена</th>
+                        </tr>
+                      </thead>
+                      <tbody class="align-middle">
+                        <tr>
+                          <th scope="row">1</th>
+                          <td><img src="./img/3.jpg" alt=""></td>
+                          <td><a href=""
+                              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Mark@mdofdfdddfdffddfdfdfdfdfdfdf</a>
+                          </td>
+                          <td>Otto</td>
+                          <td>32333 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container text-center mt-2">
+              <div class="row">
+                <div class="col-6">
+                  <p>Позиций</p>
+                  <p>Итог</p>
+                </div>
+                <div class="col-6">
+                  <p>1</p>
+                  <p class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark">Оформить заказ</button>
+          </div>
         </div>
       </div>
-    </nav>
-
+    </div>
+    <!-- Model window -->
     <main class="main_container">
-
       <!-- title -->
       <div class="container mb-3">
         <div class="row">
@@ -81,55 +170,94 @@
           </div>
         </div>
       </div>
-
+      <!-- title -->
       <!-- carousel -->
-      <div class="container-fluid p-0">
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="container-fluid p-0 mb-4">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel"
+          data-bs-interval="4000">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active ratio ratio-21x9">
               <img src="./img/Орех_1.jpg" class="d-block w-100 object-fit-cover" alt="Promo">
-              <div class="carousel-caption">
-                <h5>Метка первого слайда</h5>
-                <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+              <div class="carousel-caption d-flex align-items-end justify-content-center">
+                <div>
+                  <h5 class="fw-bold">Метка первого слайда</h5>
+                  <p class="fw-bold fst-italic">Некоторый репрезентативный заполнитель для первого слайда.</p>
+                </div>
               </div>
             </div>
             <div class="carousel-item ratio ratio-21x9">
               <img src="./img/3.jpg" class="d-block w-100 object-fit-cover" alt="...">
-              <div class="carousel-caption">
-                <h5>Метка первого слайда</h5>
-                <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+              <div class="carousel-caption d-flex align-items-end justify-content-center">
+                <div>
+                  <h5 class="fw-bold">Метка первого слайда</h5>
+                  <p class="fw-bold fst-italic">Некоторый репрезентативный заполнитель для первого слайда.</p>
+                </div>
               </div>
             </div>
             <div class="carousel-item ratio ratio-21x9">
               <img src="./img/dhl.jpg" class="d-block w-100 object-fit-cover" alt="...">
-              <div class="carousel-caption">
-                <h5>Метка первого слайда</h5>
-                <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+              <div class="carousel-caption d-flex align-items-end justify-content-center">
+                <div>
+                  <h5 class="fw-bold">Метка первого слайда</h5>
+                  <p class="fw-bold fst-italic">Некоторый репрезентативный заполнитель для первого слайда.</p>
+                </div>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Предыдущий</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Следующий</span>
           </button>
         </div>
       </div>
-
-      <!-- Main content -->
-      .<div class="container">
+      <!-- carousel -->
+      <!-- input form -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="input-group mb-3 input-group-sm w-50 m-auto">
+              <label class="input-group-text" for="inputGroupSelect01">Сортировка:</label>
+              <select class="form-select text-center" id="inputGroupSelect01">
+                <option selected>по умолчанию</option>
+                <option value="1">по цене &uarr;</option>
+                <option value="2">по цене &darr;</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group mb-3 input-group-sm w-50 m-auto">
+              <label class="input-group-text" for="inputGroupSelect01">Показать:</label>
+              <select class="form-select text-center" id="inputGroupSelect01">
+                <option selected>9</option>
+                <option value="1">15</option>
+                <option value="2">30</option>
+                <option value="2">60</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- input form -->
+      <!-- card -->
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
-              <div class="card mx-auto w-100 my_card" style="width: 18rem;">
+              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
                 <div class="ratio ratio-16x9">
                   <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
                 </div>
@@ -138,16 +266,19 @@
                     <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
                     <p class="fw-lighter">за шт.</p>
                   </div>
-                  <h5 class="card-title text-center">Заголовок карточки</h5>
+                  <h5 class="card-title text-center text-truncate border-top pt-1">Заголовок карточки</h5>
                   <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
-                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.
+                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную
+                    часть содержимого карты.
                   </p>
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
-                    <a class="btn btn-dark mt-2">
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2">
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -155,9 +286,10 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
-              <div class="card mx-auto w-100 my_card" style="width: 18rem;">
+              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
                 <div class="ratio ratio-16x9">
                   <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
                 </div>
@@ -166,16 +298,19 @@
                     <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
                     <p class="fw-lighter">за шт.</p>
                   </div>
-                  <h5 class="card-title text-center">Заголовок карточки</h5>
+                  <h5 class="card-title text-center text-truncate border-top pt-1">Заголовок карточки</h5>
                   <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
-                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.
+                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную
+                    часть содержимого карты.
                   </p>
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
-                    <a class="btn btn-dark mt-2">
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2">
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -183,9 +318,9 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
-              <div class="card mx-auto w-100 my_card" style="width: 18rem;">
+              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
                 <div class="ratio ratio-16x9">
                   <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
                 </div>
@@ -194,16 +329,19 @@
                     <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
                     <p class="fw-lighter">за шт.</p>
                   </div>
-                  <h5 class="card-title text-center">Заголовок карточки</h5>
+                  <h5 class="card-title text-center text-truncate border-top pt-1">Заголовок карточки</h5>
                   <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
-                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.
+                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную
+                    часть содержимого карты.
                   </p>
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
-                    <a class="btn btn-dark mt-2">
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2">
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -211,9 +349,9 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
-              <div class="card mx-auto w-100 my_card" style="width: 18rem;">
+              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
                 <div class="ratio ratio-16x9">
                   <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
                 </div>
@@ -222,16 +360,19 @@
                     <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
                     <p class="fw-lighter">за шт.</p>
                   </div>
-                  <h5 class="card-title text-center">Заголовок карточки</h5>
+                  <h5 class="card-title text-center text-truncate border-top pt-1">Заголовок карточки</h5>
                   <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
-                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.
+                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную
+                    часть содержимого карты.
                   </p>
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
-                    <a class="btn btn-dark mt-2">
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2">
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -239,9 +380,9 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
-              <div class="card mx-auto w-100 my_card" style="width: 18rem;">
+              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
                 <div class="ratio ratio-16x9">
                   <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
                 </div>
@@ -250,16 +391,50 @@
                     <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
                     <p class="fw-lighter">за шт.</p>
                   </div>
-                  <h5 class="card-title text-center">Заголовок карточки</h5>
+                  <h5 class="card-title text-center text-truncate border-top pt-1">Заголовок карточки</h5>
                   <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
-                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.
+                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную
+                    часть содержимого карты.
                   </p>
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
-                    <a class="btn btn-dark mt-2">
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2">
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
+                      <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
+            <a href="./card.html" class="item_card">
+              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
+                <div class="ratio ratio-16x9">
+                  <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
+                    <p class="fw-lighter">за шт.</p>
+                  </div>
+                  <h5 class="card-title text-center text-truncate border-top pt-1">Заголовок карточки</h5>
+                  <p class="card-text text-truncate fw-lighter" style="max-width: 500px">
+                    Небольшой пример текста, который должен основываться на названии карточки и составлять основную
+                    часть содержимого карты.
+                  </p>
+                  <div class="container text-center">
+                    <a class="btn btn-dark mt-2">В корзину</a>
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
+                      <i class="fa-solid fa-heart" style="color: #ffffff"></i>
+                    </a>
+                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -269,7 +444,7 @@
           </div>
         </div>
       </div>
-
+      <!-- card -->
       <!-- Pagination -->
       <div class="container d-flex justify-content-center align-items-center my-3">
         <div class="row">
@@ -294,48 +469,66 @@
           </div>
         </div>
       </div>
+      <!-- Pagination -->
     </main>
-
     <!-- Footer -->
     <footer class="bg-dark text-light" id="my_footer">
       <div class="container py-3">
         <div class="row">
           <div class="col-md-6">
-            <h5 class="text-center">О нас</h5>
-            <p>
-              По вопросам сотрудничества, вопросам, жалобам и предложениям, вы
-              можете связаться с нами в любой из указанных социальных сетей
-            </p>
+            <div class="text-center">
+              <h5>О нас</h5>
+              <p>
+                Екатеринбург ул. Пушкина д.1
+              </p>
+              <p>
+                <a href="tel:+73439994949"
+                  class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">+73439994949</a>
+              </p>
+              <p>
+                пн-вс с 8:00 до 20:00
+              </p>
+            </div>
           </div>
-          <div class="col-md-6 text-center my-auto">
+          <div class="col-md-6 text-center">
             <h5>Социальные сети</h5>
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-white"><i class="fab fa-vk"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-white"><i class="fab fa-telegram"></i></a>
-              </li>
-            </ul>
+            <div class="icons">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white"><i class="fab fa-vk"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white"><i class="fab fa-telegram"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <!-- Footer -->
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <button id="back-to-top"><i class="fa-solid fa-caret-up"></i></button><!-- Button to top -->
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
 </body>
 
 </html>
