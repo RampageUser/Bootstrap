@@ -38,10 +38,7 @@
                 <a class="nav-link" href="#my_footer">Контакты</a>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle pb-1" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Категории
-                </a>
+                <a class="nav-link dropdown-toggle pb-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Категории</a>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="./catalog.html">Подкатегория</a>
@@ -54,7 +51,7 @@
             </ul>
             <ul class="navbar-nav ml-auto order-lg-2">
               <li class="nav-item mx-1">
-                <a class="nav-link nav_btn" aria-current="page" href="#">
+                <a class="nav-link nav_btn" aria-current="page" href="./profil.html">
                   <i class="fa-solid fa-user my_icon"></i><span class="d-lg-none"> Профиль</span>
                 </a>
               </li>
@@ -89,12 +86,13 @@
       </nav>
       <!-- Main navbar -->
       <!-- Breadcrumb -->
-      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="d-inline-block pe-3 pb-2 my_bar2 d-none"
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="d-inline-block pe-3 pb-2 my_bar2"
         data-bs-theme="dark">
         <ol class="breadcrumb m-0">
-          <li class="breadcrumb-item"><a href="./index.html"
-              class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Главная</a>
+          <li class="breadcrumb-item">
+            <a href="./index.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Главная</a>
           </li>
+          <li class="breadcrumb-item active" aria-current="page">Страница 1</li>
         </ol>
         <div class="triangle"></div>
       </nav>
@@ -127,11 +125,13 @@
                         <tr>
                           <th scope="row">1</th>
                           <td><img src="./img/3.jpg" alt=""></td>
-                          <td><a href=""
-                              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Mark@mdofdfdddfdffddfdfdfdfdfdfdf</a>
+                          <td>
+                            <a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                              Название продукта
+                            </a>
                           </td>
-                          <td>Otto</td>
-                          <td>32333 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></td>
+                          <td>3 шт.</td>
+                          <td>100 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></td>
                         </tr>
                       </tbody>
                     </table>
@@ -146,8 +146,8 @@
                   <p>Итог</p>
                 </div>
                 <div class="col-6">
-                  <p>1</p>
-                  <p class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></p>
+                  <p>3</p>
+                  <p class="card-title">300 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></p>
                 </div>
               </div>
             </div>
@@ -229,7 +229,7 @@
           <div class="col-md-6">
             <div class="input-group mb-3 input-group-sm w-75 m-auto">
               <label class="input-group-text" for="inputGroupSelect01">Сортировка:</label>
-              <select class="form-select text-center" id="inputGroupSelect01">
+              <select class="form-select text-center focus-ring focus-ring-dark py-1 px-2 text-decoration-none" id="inputGroupSelect01">
                 <option selected>по умолчанию</option>
                 <option value="1">по цене &uarr;</option>
                 <option value="2">по цене &darr;</option>
@@ -239,7 +239,7 @@
           <div class="col-md-6">
             <div class="input-group mb-3 input-group-sm w-75 m-auto">
               <label class="input-group-text" for="inputGroupSelect01">Показать:</label>
-              <select class="form-select text-center" id="inputGroupSelect01">
+              <select class="form-select text-center focus-ring focus-ring-dark py-1 px-2 text-decoration-none" id="inputGroupSelect01">
                 <option selected>9</option>
                 <option value="1">15</option>
                 <option value="2">30</option>
