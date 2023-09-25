@@ -175,15 +175,14 @@
               <div class="row justify-content-center">
                 <div class="col-10 col-md-6 col-xl-4 mb-3">
                   <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
-                      required />
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" disabled readonly/>
                     <label for="floatingInput">Электронной почта</label>
                   </div>
                 </div>
-                <div class="col-10 col-md-6 col-xl-4 mb-3">
+                <div class="col-10 col-md-6 col-xl-4 mb-3 mb-md-0">
                   <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Пароль"/>
-                    <label for="floatingPassword">Пароль</label>
+                    <input type="text" class="form-control" placeholder="Логин" name="username" id="username" disabled readonly/>
+                    <label for="username">Логин</label>
                   </div>
                 </div>
               </div>
@@ -196,32 +195,22 @@
                 </div>
                 <div class="col-10 col-md-6 col-xl-4 mb-3">
                   <div class="form-floating">
-                    <input type="text" class="form-control" placeholder="Фамилия" name="surname" id="surname"
-                      required />
+                    <input type="text" class="form-control" placeholder="Фамилия" name="surname" id="surname"/>
                     <label for="surname">Фамилия</label>
                   </div>
                 </div>
               </div>
               <div class="row justify-content-center mb-3">
-                <div class="col-10 col-md-6 col-xl-4 mb-3 mb-md-0">
+                <div class="col-10 col-md-6 col-xl-4 mb-3">
                   <div class="form-floating">
-                    <input type="text" class="form-control" placeholder="Логин" name="username" id="username"
-                      required />
-                    <label for="username">Логин</label>
+                    <input type="date" class="form-control" placeholder="Дата рождения" name="date" id="date"/>
+                    <label for="date">Дата рождения</label>
                   </div>
                 </div>
                 <div class="col-10 col-md-6 col-xl-4">
                   <div class="form-floating">
                     <input type="text" class="form-control" placeholder="Город" name="city" id="city"/>
                     <label for="city">Город</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center mb-3">
-                <div class="col-10 col-md-6 col-xl-4">
-                  <div class="form-floating">
-                    <input type="date" class="form-control" placeholder="Дата рождения" name="date" id="date"/>
-                    <label for="date">Дата рождения</label>
                   </div>
                 </div>
               </div>
