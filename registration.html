@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,6 +16,7 @@
   <link rel="stylesheet" href="./css/navbar.css" />
   <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body class="bs-body-bg-rgb">
   <div class="wrapper">
     <header>
@@ -103,18 +105,9 @@
     <main class="main_container">
       <div class="container my-5">
         <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-9 d-flex justify-content-center align-items-center d-none">
-            <div class="alert alert-danger w-50 text-center" role="alert">
-              A simple warning alert—check it out!
-            </div>
-          </div>
-          <div class="col-9 d-flex justify-content-center align-items-center d-none">
-            <div class="alert alert-success w-50 text-center" role="alert">
-              A simple warning alert—check it out!
-            </div>
-          </div>
-          <div class="col-9 d-flex justify-content-center align-items-center">
-            <form class="z-0">
+          <div class="col-11 col-md-9 col-lg-6">
+            <div class="alert alert-danger text-center" role="alert">A simple warning alert—check it out! Lorem ipsum dolor sit a</div>
+            <form class="z-0 w-100">
               <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="username" placeholder="Введите логин" required />
                 <label for="username">Логин</label>
@@ -136,22 +129,30 @@
                 <div class="row">
                   <div class="col-lg-6 mb-3">
                     <div class="form-floating">
-                      <input type="text" class="form-control" placeholder="Имя" name="name" id="name"/>
+                      <input type="text" class="form-control" placeholder="Имя" name="name" id="name" />
                       <label for="name">Имя</label>
                     </div>
                   </div>
                   <div class="col-lg-6 mb-3">
                     <div class="form-floating">
-                      <input type="text" class="form-control" placeholder="Фамилия" name="surname" id="surname"/>
+                      <input type="text" class="form-control" placeholder="Фамилия" name="surname" id="surname" />
                       <label for="surname">Фамилия</label>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-center align-items-center">
+              <div class="d-flex justify-content-center align-items-center mb-2">
                 <button type="submit" class="btn btn-dark">Зарегистрироваться</button>
               </div>
             </form>
+            <div class="text-center">
+              <small>
+                <a href="./login.html"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                  Уже есть аккаунт? Авторизоваться!
+                </a>
+              </small>
+            </div>
           </div>
         </div>
       </div>
@@ -210,4 +211,5 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
