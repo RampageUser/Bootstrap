@@ -7,3 +7,9 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.my_image {
+    object-fit: cover;
+    width: 100%;
+    height: 240px;
+}

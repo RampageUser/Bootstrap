@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,6 +17,7 @@
   <link rel="stylesheet" href="./css/card.css" />
   <link rel="stylesheet" href="./css/footer.css" />
 </head>
+
 <body class="bs-body-bg-rgb">
   <div class="wrapper">
     <header>
@@ -92,7 +94,8 @@
         data-bs-theme="dark">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
-            <a href="./index.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Главная</a>
+            <a href="./index.html"
+              class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Главная</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             Карточка товара
@@ -173,7 +176,7 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="card-body">
-                    <h5 class="card-title text-center">Заголовок карточки</h5>
+                    <h5 class="card-title text-center">Название товара</h5>
                     <p class="card-text fw-light">
                       Это более широкая карточка с вспомогательным текстом
                       ниже в качестве естественного перехода к дополнительному
@@ -183,24 +186,43 @@
                       <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
                       <p class="fw-lighter">за шт.</p>
                     </div>
-                    <p class="card-text text-end fw-lighter">
-                      <small class="text-body-secondary">Осталось ? штук</small>
-                    </p>
-                    <div class="container text-center">
-                      <a class="btn btn-dark mt-2">В корзину</a>
-                      <div class="btn-group mt-2 d-none" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-dark">-</button>
-                        <button type="button" class="btn btn-outline-dark disabled">1</button>
-                        <button type="button" class="btn btn-dark">+</button>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <a class="btn btn-dark" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus"
+                          data-bs-content="Добавить в избранное">
+                          <i class="fa-solid fa-heart" style="color: #ffffff"></i>
+                        </a>
+                        <a class="btn btn-dark d-none" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus"
+                          data-bs-content="Удалить из избранного">
+                          <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
+                        </a>
                       </div>
-                      <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                        data-bs-trigger="hover focus" data-bs-content="Добавить в избранное">
-                        <i class="fa-solid fa-heart" style="color: #ffffff"></i>
-                      </a>
-                      <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                        data-bs-trigger="hover focus" data-bs-content="Удалить из избранного">
-                        <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
-                      </a>
+                      <div class="d-flex align-items-center">
+                        <small class="text-body-secondary fw-lighter">Осталось 40 штук</small>
+                      </div>
+                    </div>
+                    </p>
+                    <div class="container">
+                      <div class="row text-center">
+                        <div class="col-12">
+                          <a class="btn btn-dark mt-2 d-none">В корзину</a>
+                          <div class="btn-group mt-2" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-dark">
+                              <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                            </button>
+                            <button type="button" class="btn btn-dark">
+                              <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark disabled">1</button>
+                            <button type="button" class="btn btn-dark">
+                              <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -222,7 +244,8 @@
                 Екатеринбург ул. Пушкина д.1
               </p>
               <p>
-                <a href="tel:+73439994949" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">+73439994949</a>
+                <a href="tel:+73439994949"
+                  class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">+73439994949</a>
               </p>
               <p>
                 пн-вс с 8:00 до 20:00
@@ -268,4 +291,5 @@
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
   </script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +18,7 @@
   <link rel="stylesheet" href="./css/card.css">
   <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body class="bs-body-bg-rgb">
   <div class="wrapper">
     <header>
@@ -38,7 +40,8 @@
                 <a class="nav-link" href="#my_footer">Контакты</a>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle pb-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Категории</a>
+                <a class="nav-link dropdown-toggle pb-1" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Категории</a>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="./catalog.html">Подкатегория</a>
@@ -58,16 +61,16 @@
               <li class="nav-item me-2">
                 <a class="nav-link nav_btn" aria-current="page" href="#">
                   <i class="fa-solid fa-heart my_icon"></i>
-                  <span class="d-lg-none"> Избраное</span>
-                  <span class="badge rounded-pill counter">0</span>
+                  <span class="d-lg-none"> Избранное</span>
+                  <span class="badge rounded-pill counter">1</span>
                 </a>
               </li>
               <li class="nav-item me-2">
                 <a class="nav-link nav_btn" aria-current="page" href="#" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">
+                  data-bs-target="#exampleModalToggle">
                   <i class="fa-solid fa-basket-shopping my_icon"></i>
                   <span class="d-lg-none"> Корзина</span>
-                  <span class="badge rounded-pill counter">1</span>
+                  <span class="badge rounded-pill counter">2</span>
                 </a>
               </li>
               <li class="nav-item d-none">
@@ -78,7 +81,7 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Введине название" aria-label="Поиск">
+              <input class="form-control me-2" type="search" placeholder="Введите название" aria-label="Поиск">
               <button class="btn btn-dark" type="submit">Поиск</button>
             </form>
           </div>
@@ -90,7 +93,8 @@
         data-bs-theme="dark">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
-            <a href="./index.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Главная</a>
+            <a href="./index.html"
+              class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Главная</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">Страница 1</li>
         </ol>
@@ -99,61 +103,121 @@
       <!-- Breadcrumb -->
     </header>
     <!-- Model window -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5 text-secondary" id="exampleModalLabel">Корзина</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            <h1 class="modal-title fs-5 text-light" id="exampleModalToggleLabel">Корзина</h1>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
           </div>
           <div class="modal-body">
             <div class="table-responsive">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-12">
-                    <table class="table table-striped table-hover table-bordered text-center">
-                      <thead class="table-dark">
-                        <tr>
-                          <th scope="col">№</th>
-                          <th scope="col">Изображение</th>
-                          <th scope="col">Название</th>
-                          <th scope="col">Количество</th>
-                          <th scope="col">Цена</th>
-                        </tr>
-                      </thead>
-                      <tbody class="align-middle">
-                        <tr>
-                          <th scope="row">1</th>
-                          <td><img src="./img/3.jpg" alt=""></td>
-                          <td>
-                            <a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                              Название продукта
-                            </a>
-                          </td>
-                          <td>3 шт.</td>
-                          <td>100 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
+              <table class="table text-center">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Изображение</th>
+                    <th scope="col">Название</th>
+                    <th scope="col">Количество</th>
+                    <th scope="col">Цена</th>
+                  </tr>
+                </thead>
+                <tbody class="align-middle">
+                  <tr>
+                    <td><img class="rounded-2" src="./img/3.jpg" alt="Image"></td>
+                    <td>
+                      <a href="./card.html" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                        Название продукта
+                      </a>
+                    </td>
+                    <td>
+                      <div class="btn-group mt-2" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-dark">
+                          <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark">
+                          <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-dark disabled">3</button>
+                        <button type="button" class="btn btn-dark">
+                          <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td>100 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></td>
+                  </tr>
+                  <tr>
+                    <td><img class="rounded-2" src="./img/3.jpg" alt="Image"></td>
+                    <td>
+                      <a href="./card.html"
+                        class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                        Название продукта
+                      </a>
+                    </td>
+                    <td>
+                      <div class="btn-group mt-2" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-dark">
+                          <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark">
+                          <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-dark disabled">1</button>
+                        <button type="button" class="btn btn-dark">
+                          <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td>50 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="container text-center mt-2">
+            <div class="container d-none">
               <div class="row">
-                <div class="col-6">
-                  <p>Позиций</p>
-                  <p>Итог</p>
-                </div>
-                <div class="col-6">
-                  <p>3</p>
-                  <p class="card-title">300 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></p>
+                <div class="col-12 text-center">
+                  <h3>Корзина пуста</h3>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-dark">Оформить заказ</button>
+            <div class="container text-center mt-2">
+              <div class="row justify-content-center">
+                <div class="col-5 col-lg-2">
+                  <div>Позиций</div>
+                  <div>Количество</div>
+                  <big>Итог</big>
+                </div>
+                <div class="col-5 col-lg-2">
+                  <div>2</div>
+                  <div>4</div>
+                  <big class="card-title">350 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></big>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+              Оформить заказ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-light" id="exampleModalToggleLabel2">Оформление заказа</h1>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <div class="modal-body">
+            Скройте это модальное окно и покажите первое с помощью кнопки ниже.
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+              Изменить заказ
+            </button>
           </div>
         </div>
       </div>
@@ -187,7 +251,9 @@
               <div class="carousel-caption d-flex align-items-end justify-content-center">
                 <div class="mb-3 my_carousel">
                   <h5 class="fw-bold">Откройте свой вкусовой путь с нашими свежими орехами!</h5>
-                  <p class="fw-bold fst-italic">"В нашем магазине мы предлагаем вам уникальное приключение в мире вкусов и питательности. Мы гордимся тем, что предлагаем только свежие и качественные орехи, которые удовлетворят самые изысканные вкусы."</p>
+                  <p class="fw-bold fst-italic">"В нашем магазине мы предлагаем вам уникальное приключение в мире вкусов
+                    и питательности. Мы гордимся тем, что предлагаем только свежие и качественные орехи, которые
+                    удовлетворят самые изысканные вкусы."</p>
                 </div>
               </div>
             </div>
@@ -196,7 +262,9 @@
               <div class="carousel-caption d-flex align-items-end justify-content-center">
                 <div class="mb-3 my_carousel">
                   <h5 class="fw-bold">Здоровье и Экология в Каждой Упаковке!</h5>
-                  <p class="fw-bold fst-italic">Мы гордимся тем, что наши орехи собираются в экологически чистых зонах, далеко от загрязнений и химических удобрений. Мы поддерживаем устойчивое сельское хозяйство и заботимся о сохранении природы.</p>
+                  <p class="fw-bold fst-italic">Мы гордимся тем, что наши орехи собираются в экологически чистых зонах,
+                    далеко от загрязнений и химических удобрений. Мы поддерживаем устойчивое сельское хозяйство и
+                    заботимся о сохранении природы.</p>
                 </div>
               </div>
             </div>
@@ -205,7 +273,9 @@
               <div class="carousel-caption d-flex align-items-end justify-content-center">
                 <div class="mb-3 my_carousel">
                   <h5 class="fw-bold">Орехи со Всего Мира, Доступные Даже в Условиях Санкций!</h5>
-                  <p class="fw-bold fst-italic">Несмотря на санкции, наша компания предоставляет безопасную и надежную доставку орехов прямо к вам. Мы следим за всеми правилами и регуляциями, чтобы ваши покупки достигли вас в целости и сохранности.</p>
+                  <p class="fw-bold fst-italic">Несмотря на санкции, наша компания предоставляет безопасную и надежную
+                    доставку орехов прямо к вам. Мы следим за всеми правилами и регуляциями, чтобы ваши покупки достигли
+                    вас в целости и сохранности.</p>
                 </div>
               </div>
             </div>
@@ -229,7 +299,8 @@
           <div class="col-md-6">
             <div class="input-group mb-3 input-group-sm w-75 m-auto">
               <label class="input-group-text" for="inputGroupSelect01">Сортировка:</label>
-              <select class="form-select text-center focus-ring focus-ring-dark py-1 px-2 text-decoration-none" id="inputGroupSelect01">
+              <select class="form-select text-center focus-ring focus-ring-dark py-1 px-2 text-decoration-none"
+                id="inputGroupSelect01">
                 <option selected>по умолчанию</option>
                 <option value="1">по цене &uarr;</option>
                 <option value="2">по цене &darr;</option>
@@ -239,7 +310,8 @@
           <div class="col-md-6">
             <div class="input-group mb-3 input-group-sm w-75 m-auto">
               <label class="input-group-text" for="inputGroupSelect01">Показать:</label>
-              <select class="form-select text-center focus-ring focus-ring-dark py-1 px-2 text-decoration-none" id="inputGroupSelect01">
+              <select class="form-select text-center focus-ring focus-ring-dark py-1 px-2 text-decoration-none"
+                id="inputGroupSelect01">
                 <option selected>9</option>
                 <option value="1">15</option>
                 <option value="2">30</option>
@@ -256,8 +328,8 @@
           <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
               <div class="card mx-auto w-100 card_item" style="width: 18rem;">
-                <div class="ratio ratio-16x9">
-                  <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
+                <div>
+                  <img src="https://loremflickr.com/400/200" class="my_image" alt="picture">
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
@@ -272,16 +344,23 @@
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <div class="btn-group mt-2 d-none" role="group" aria-label="Basic outlined example">
-                      <button type="button" class="btn btn-dark">-</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                      </button>
                       <button type="button" class="btn btn-outline-dark disabled">1</button>
-                      <button type="button" class="btn btn-dark">+</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                      </button>
                     </div>
                     <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избранное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
+                    <a class="btn btn-dark mt-2 d-none" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избранного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -291,10 +370,8 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
-              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
-                <div class="ratio ratio-16x9">
-                  <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
-                </div>
+              <div class="card mx-auto w-100 card_item">
+                <img src="https://loremflickr.com/300/240" class="my_image" alt="picture">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
@@ -308,16 +385,23 @@
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <div class="btn-group mt-2 d-none" role="group" aria-label="Basic outlined example">
-                      <button type="button" class="btn btn-dark">-</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                      </button>
                       <button type="button" class="btn btn-outline-dark disabled">1</button>
-                      <button type="button" class="btn btn-dark">+</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                      </button>
                     </div>
                     <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избранное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
+                    <a class="btn btn-dark mt-2 d-none" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избранного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -327,10 +411,8 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
-              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
-                <div class="ratio ratio-16x9">
-                  <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
-                </div>
+              <div class="card mx-auto w-100 card_item">
+                <img src="https://loremflickr.com/350/240" class="my_image" alt="picture">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
@@ -344,16 +426,23 @@
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <div class="btn-group mt-2 d-none" role="group" aria-label="Basic outlined example">
-                      <button type="button" class="btn btn-dark">-</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                      </button>
                       <button type="button" class="btn btn-outline-dark disabled">1</button>
-                      <button type="button" class="btn btn-dark">+</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                      </button>
                     </div>
                     <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избранное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
+                    <a class="btn btn-dark mt-2 d-none" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избранного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -363,10 +452,8 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
-              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
-                <div class="ratio ratio-16x9">
-                  <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
-                </div>
+              <div class="card mx-auto w-100 card_item">
+                <img src="https://loremflickr.com/310/240" class="my_image" alt="picture">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
@@ -380,16 +467,23 @@
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <div class="btn-group mt-2 d-none" role="group" aria-label="Basic outlined example">
-                      <button type="button" class="btn btn-dark">-</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                      </button>
                       <button type="button" class="btn btn-outline-dark disabled">1</button>
-                      <button type="button" class="btn btn-dark">+</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                      </button>
                     </div>
                     <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избранное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
+                    <a class="btn btn-dark mt-2 d-none" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избранного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -399,10 +493,8 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
-              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
-                <div class="ratio ratio-16x9">
-                  <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
-                </div>
+              <div class="card mx-auto w-100 card_item">
+                <img src="https://loremflickr.com/100/240" class="my_image" alt="picture">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
@@ -416,16 +508,23 @@
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <div class="btn-group mt-2 d-none" role="group" aria-label="Basic outlined example">
-                      <button type="button" class="btn btn-dark">-</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                      </button>
                       <button type="button" class="btn btn-outline-dark disabled">1</button>
-                      <button type="button" class="btn btn-dark">+</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                      </button>
                     </div>
                     <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избранное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
+                    <a class="btn btn-dark mt-2 d-none" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избранного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -435,10 +534,8 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-3 g-4">
             <a href="./card.html" class="item_card">
-              <div class="card mx-auto w-100 card_item" style="width: 18rem;">
-                <div class="ratio ratio-16x9">
-                  <img src="./img/Орех_1.jpg" class="card-img-top" alt="...">
-                </div>
+              <div class="card mx-auto w-100 card_item">
+                <img src="https://loremflickr.com/300/200" class="my_image" alt="picture">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <h5 class="card-title">2133 <i class="fa-solid fa-ruble-sign" style="color: #000000;"></i></h5>
@@ -452,16 +549,23 @@
                   <div class="container text-center">
                     <a class="btn btn-dark mt-2">В корзину</a>
                     <div class="btn-group mt-2 d-none" role="group" aria-label="Basic outlined example">
-                      <button type="button" class="btn btn-dark">-</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                      </button>
                       <button type="button" class="btn btn-outline-dark disabled">1</button>
-                      <button type="button" class="btn btn-dark">+</button>
+                      <button type="button" class="btn btn-dark">
+                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                      </button>
                     </div>
                     <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Добавить в избраное">
+                      data-bs-trigger="hover focus" data-bs-content="Добавить в избранное">
                       <i class="fa-solid fa-heart" style="color: #ffffff"></i>
                     </a>
-                    <a class="btn btn-dark mt-2" data-bs-toggle="popover" data-bs-placement="bottom"
-                      data-bs-trigger="hover focus" data-bs-content="Удалить из избраного">
+                    <a class="btn btn-dark mt-2 d-none" data-bs-toggle="popover" data-bs-placement="bottom"
+                      data-bs-trigger="hover focus" data-bs-content="Удалить из избранного">
                       <i class="fa-solid fa-heart-crack" style="color: #ffffff;"></i>
                     </a>
                   </div>
@@ -509,7 +613,8 @@
                 Екатеринбург ул. Пушкина д.1
               </p>
               <p>
-                <a href="tel:+73439994949" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">+73439994949</a>
+                <a href="tel:+73439994949"
+                  class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">+73439994949</a>
               </p>
               <p>
                 пн-вс с 8:00 до 20:00
@@ -556,4 +661,5 @@
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
   </script>
 </body>
+
 </html>
