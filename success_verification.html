@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>iStore</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/2e3d04716c.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/body.css">
+	<link rel="stylesheet" href="./css/navbar.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/card.css">
+	<link rel="stylesheet" href="./css/footer.css">
+</head>
+<body class="bs-body-bg-rgb">
+	<div class="wrapper">
+		<header>
+			<!-- Main navbar -->
+			<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">iStore</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Переключатель навигации">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="./index.html">Главная</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#my_footer">Контакты</a>
+							</li>
+							<li class="nav-item dropdown ">
+								<a class="nav-link dropdown-toggle pb-1" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">Категории</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="./catalog.html">Подкатегория</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="navbar-nav ml-auto order-lg-2">
+							<li class="nav-item mx-1">
+								<a class="nav-link nav_btn" aria-current="page" href="./profile.html">
+									<i class="fa-solid fa-user my_icon"></i><span class="d-lg-none"> Профиль</span>
+								</a>
+							</li>
+							<li class="nav-item me-2">
+								<a class="nav-link nav_btn" aria-current="page" href="#">
+									<i class="fa-solid fa-heart my_icon"></i>
+									<span class="d-lg-none"> Избранное</span>
+									<span class="badge rounded-pill counter">1</span>
+								</a>
+							</li>
+							<li class="nav-item me-2">
+								<a class="nav-link nav_btn" aria-current="page" href="#" data-bs-toggle="modal"
+									data-bs-target="#exampleModalToggle">
+									<i class="fa-solid fa-basket-shopping my_icon"></i>
+									<span class="d-lg-none"> Корзина</span>
+									<span class="badge rounded-pill counter">2</span>
+								</a>
+							</li>
+							<li class="nav-item d-none">
+								<a class="nav-link" aria-current="page" href="./login.html">Войти</a>
+							</li>
+							<li class="nav-item d-none">
+								<a class="nav-link" aria-current="page" href="./registration.html">Регистрация</a>
+							</li>
+						</ul>
+						<form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="Введите название" aria-label="Поиск">
+							<button class="btn btn-dark" type="submit">Поиск</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+			<!-- Main navbar -->
+    </header>
+		<main class="main_container">
+			<div class="container mb-3">
+				<div class="row justify-content-center">
+					<div class="col-11 col-md-6 border rounded-5 border-dark">
+						<h3 class="text-center mt-3">Поздравляем!</h3>
+						<hr>
+						<p class="text-center">
+							Ваша учётная запись успешно подтверждена!
+						</p>
+						<hr>
+						<div class="text-center mb-3">
+							<a href="./catalog.html" class="btn btn-outline-dark">Перейти на главную страницу</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Footer -->
+		<footer class="bg-dark text-light v" id="my_footer">
+			<div class="container py-3">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="text-center">
+							<h5>О нас</h5>
+							<p>
+								Екатеринбург ул. Пушкина д.1
+							</p>
+							<p>
+								<a href="tel:+73439994949"
+									class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">+73439994949</a>
+							</p>
+							<p>
+								пн-вс с 8:00 до 20:00
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6 text-center">
+						<h5>Социальные сети</h5>
+						<div class="icons">
+							<ul class="list-unstyled list-inline">
+								<li class="list-inline-item">
+									<a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#" class="text-white"><i class="fab fa-vk"></i></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#" class="text-white"><i class="fab fa-telegram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer -->
+	</div>
+	<button id="back-to-top"><i class="fa-solid fa-caret-up"></i></button><!-- Button to top -->
+	<script src="./js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+	<script>
+		const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+		const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+	</script>
+</body>
+
+</html>
